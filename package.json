@@ -9,6 +9,9 @@
     "express": "~4.16.4"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "package": "npm run clean && npm run zip",
+    "clean": "rm -f upload.zip",
+    "zip": "git archive --format=zip HEAD -o upload.zip"
   }
 }
