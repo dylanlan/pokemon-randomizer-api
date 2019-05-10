@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "ejs": "latest",
-    "aws-sdk": "latest",
-    "express": "latest",
-    "body-parser": "latest"
+    "aws-sdk": "~2.452.0",
+    "body-parser": "~1.19.0",
+    "ejs": "~2.6.1",
+    "express": "~4.16.4"
   },
   "scripts": {
     "start": "node app.js"
