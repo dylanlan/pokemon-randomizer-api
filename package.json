@@ -5,13 +5,17 @@
   "dependencies": {
     "aws-sdk": "~2.452.0",
     "body-parser": "~1.19.0",
-    "ejs": "~2.6.1",
-    "express": "~4.16.4"
+    "express": "~4.16.4",
+    "pug": "~2.0.3"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node ./app.js",
+    "watch": "nodemon --ext js,pug ./app.js",
     "package": "npm run clean && npm run zip",
     "clean": "rm -f upload.zip",
     "zip": "git archive --format=zip HEAD -o upload.zip"
+  },
+  "devDependencies": {
+    "nodemon": "~1.19.0"
   }
 }
