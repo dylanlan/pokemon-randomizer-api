@@ -18,7 +18,7 @@ html(lang="en")
       .header
         ul.nav.nav-pills.pull-right
           li.active
-            a(href="#") Home
+            a(href="/") Home
           li
             a(href="#") About
       .jumbotron
@@ -26,10 +26,8 @@ html(lang="en")
         p
           a.btn.btn-lg.btn-success(data-toggle="modal" href="/randomize") Randomize
         if pokemon != null
-          p Got #{pokemon[0]}
-        else
-          p No pokemon!
-      .footer
-        p © 2019
+          ul
+            for poke in pokemon
+              li= poke
       script(src="/jquery/jquery-1.11.3.min.js")
       script(src="/bootstrap/js/bootstrap.min.js")
