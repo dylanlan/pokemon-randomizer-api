@@ -22,11 +22,13 @@ html(lang="en")
           li
             a(href="#") About
       .jumbotron
-        h1 Hello World
-        p.lead
-          | #{title} Test
+        h1 Pokemon Randomizer
         p
-          a.btn.btn-lg.btn-success(data-toggle="modal" href="#") Button
+          a.btn.btn-lg.btn-success(data-toggle="modal" href="/randomize") Randomize
+        if pokemon != null
+          p Got #{pokemon[0]}
+        else
+          p No pokemon!
       .footer
         p © 2019
       script(src="/jquery/jquery-1.11.3.min.js")
