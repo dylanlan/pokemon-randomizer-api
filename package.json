@@ -11,7 +11,7 @@
   "scripts": {
     "start": "node ./app.js",
     "watch": "nodemon --ext js,pug ./app.js",
-    "package": "npm run clean && npm run zip",
+    "build": "npm run clean && npm run zip",
     "clean": "rm -f upload.zip",
     "zip": "git archive --format=zip HEAD -o upload.zip"
   },
