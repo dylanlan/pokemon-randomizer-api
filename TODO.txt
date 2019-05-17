@@ -1,0 +1,8 @@
+TODO:
+
+- get working on elastic beanstalk again
+- accept randomizer options from api
+- inputs to accept randomizer options from UI
+- display pokemon pictures, maybe more info
+- set up unit testing
+- set up linting
