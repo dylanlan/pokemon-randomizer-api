@@ -5,4 +5,3 @@ TODO:
 - inputs to accept randomizer options from UI
 - display pokemon pictures, maybe more info
 - set up unit testing
-- set up linting
