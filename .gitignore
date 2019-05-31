@@ -85,3 +85,6 @@ typings/
 
 # Beanstalk upload code
 upload.zip
+
+# For silly billies that use JetBrains products
+.idea/
