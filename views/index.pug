@@ -5,29 +5,41 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(name="description" content="")
     meta(name="author" content="")
-    title Test
+    title Pokemon Randomizer
     // Bootstrap core CSS
     link(href="/bootstrap/css/theme/flatly/bootstrap.css" rel="stylesheet")
     // Custom styles for Bootstrap template
     link(href="/bootstrap/css/jumbotron-narrow.css" rel="stylesheet")
     // Custom styles for App
     link(href="/app/css/app.css" rel="stylesheet")
-        
+    link(href="/pokesprites/pokesprite.min.css" rel="stylesheet")
+
   body
     .container
-      .header
-        ul.nav.nav-pills.pull-right
-          li.active
-            a(href="/") Home
-          li
-            a(href="#") About
-      .jumbotron
-        h1 Pokemon Randomizer
-        p
-          a.btn.btn-lg.btn-success(data-toggle="modal" href="/randomize") Randomize
-        if pokemon != null
-          ul
-            for poke in pokemon
-              li= poke
+      .row
+        .header
+          ul.nav.nav-pills.pull-right
+            li.active
+              a(href="/") Home
+            li
+              a.btn(data-toggle="collapse" href="#a-boot") Toggle About
+      .row
+        .collapse(id="a-boot")
+          .jumbotron
+            h2 Made by this cool dude
+            p Probably... I wouldn't want to make any assumptions you know.
+        .jumbotron
+          h1 Pokemon Randomizer
+          p
+            a.btn.btn-lg.btn-success(data-toggle="modal" href="/randomize") Randomize
+          if pokemon != null
+            ul.list-unstyled
+              each poke in pokemon
+                li= poke
+                .pkspr(class="pkmn-" + poke.toLowerCase()
+                        .replace(".", "").replace("'","").replace("♂", "-m").replace("♀", "-f").replace(" ", "-"))
+
+      script(src="/pokesprites/pokesprite.min.js")
+      script(type="text/javascript") PkSpr.process_dom();
       script(src="/jquery/jquery-1.11.3.min.js")
       script(src="/bootstrap/js/bootstrap.min.js")
