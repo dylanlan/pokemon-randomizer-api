@@ -1,7 +1,6 @@
 {
   "name": "pokemon-randomizer-api",
   "version": "0.0.1",
-  "private": true,
   "description": "API to pick random teams of pokemon",
   "main": "index.js",
   "repository": "https://github.com/Dylanlan/pokemon-randomizer-api",
