@@ -4,6 +4,7 @@
   "private": true,
   "description": "API to pick random teams of pokemon",
   "main": "index.js",
+  "repository": "https://github.com/Dylanlan/pokemon-randomizer-api",
   "scripts": {
     "start": "node ./app.js",
     "watch": "nodemon --ext js,pug ./app.js",
