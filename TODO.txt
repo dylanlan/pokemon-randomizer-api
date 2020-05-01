@@ -5,3 +5,4 @@ TODO:
 - inputs to accept randomizer options from UI
 - display pokemon info
 - set up unit testing
+- migrate to typescript
