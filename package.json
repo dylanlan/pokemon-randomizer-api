@@ -15,20 +15,20 @@
     "test": "mocha"
   },
   "dependencies": {
-    "aws-sdk": "^2.452.0",
-    "body-parser": "^1.19.0",
-    "express": "^4.16.4",
-    "pokemon-randomizer": "^0.1.4",
+    "aws-sdk": "^2.1157.0",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "pokemon-randomizer": "^0.1.7",
     "pug": "^3.0.2"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-semistandard": "^13.0.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-node": "^9.0.1",
-    "eslint-plugin-promise": "^4.1.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "nodemon": "^2.0.3"
+    "eslint": "^8.18.0",
+    "eslint-config-semistandard": "^16.0.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "nodemon": "^2.0.16"
   }
 }
