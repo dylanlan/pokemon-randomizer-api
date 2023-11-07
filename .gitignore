@@ -88,3 +88,12 @@ upload.zip
 
 # For silly billies that use JetBrains products
 .idea/
+
+# Yarn v2+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
